@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="wrapper">
+<div class="header">
+    <div class="burger-icon">
+        <a href="#"><i></i></a>
+    </div>
+    <div class="header-outer">
+    <div class="nav">
+        <ul>
+            <li><a href="#menu-anchor-info">Личная информация</a></li>
+            <li><a href="#menu-anchor-exp">Опыт</a></li>
+            <li><a href="#menu-anchor-js">JavaScript</a></li>
+            <li><a href="#menu-anchor-about">О себе</a></li>
+        </ul>
+    </div>
+    </div>
+
+</div>
+<div class="content">
+    <h1>Анкета</h1>
+    <form action="">
+        <div class="personal-info" id="menu-anchor-info">
+        <div class="icon">
+            <img src="../images/icon-personal-info.png" alt="">
+        </div>
+        <h2>Личная информация</h2>
+        <input type="text" placeholder="ФИО" value="Холозён Анатолий Русланович">
+        <div class="dropdown">
+            <select id="datepicker">
+                <option>2002</option>
+                <option>2001</option>
+                <option>2000</option>
+                <option>1999</option>
+                <option>1998</option>
+                <option>1997</option>
+                <option selected="selected">1996</option>
+                <option>1995</option>
+                <option>1994</option>
+                <option>1993</option>
+                <option>1992</option>
+            </select>
+            <div class="dropdown-icon"><img src="../images/arrow.png" alt=""></div>
+        </div>
+        <input type="text" placeholder="Место проживания" value="Украина, Черновцы">
+        <input type="text" placeholder="Skype" value="big.smile.lee">
+        <input type="email" placeholder="E-mail" value="kholozyon@outlook.com">
+        </div>
+        <div class="experience" id="menu-anchor-exp">
+            <div class="icon">
+                <img src="../images/icon-exp.png" alt="">
+            </div>
+            <h2>Расскажите о своем опыте</h2>
+            <div class="checkbox-area">
+
+                <div>
+                <label for="checkbox-nested-1">БЭМ/OOCSS
+                    <input type="checkbox" name="checkbox-nested-1" id="checkbox-nested-1" checked>
+                </label>
+                <label for="checkbox-nested-2">Stylus/LESS/SASS
+                    <input type="checkbox" name="checkbox-nested-2" id="checkbox-nested-2" checked>
+                </label>
+                <label for="checkbox-nested-3">Работаю с SVG
+                    <input type="checkbox" name="checkbox-nested-3" id="checkbox-nested-3">
+                </label>
+                </div>
+                <div>
+                    <label for="checkbox-nested-4">Верстаю семантично
+                        <input type="checkbox" name="checkbox-nested-4" id="checkbox-nested-4" checked>
+                    </label>
+                    <label for="checkbox-nested-5">ES2015/ES2016
+                        <input type="checkbox" name="checkbox-nested-5" id="checkbox-nested-5">
+                    </label>  <label for="checkbox-nested-6">Gulp/Grunt
+                    <input type="checkbox" name="checkbox-nested-6" id="checkbox-nested-6" checked>
+                </label>
+                </div>
+                <div>
+                    <label for="checkbox-nested-7">Webpack
+                        <input type="checkbox" name="checkbox-nested-7" id="checkbox-nested-7">
+                    </label>
+                    <label for="checkbox-nested-8">jQuery
+                        <input type="checkbox" name="checkbox-nested-8" id="checkbox-nested-8" checked>
+                    </label>  <label for="checkbox-nested-9">Использую Git
+                    <input type="checkbox" name="checkbox-nested-9" id="checkbox-nested-9" checked>
+                </label>
+                </div>
+            </div>
+        </div>
+        <div class="js-lvl" id="menu-anchor-js">
+            <div class="icon">
+                <img src="../images/icon-js.png" alt="">
+            </div>
+            <h2>Уровень владения JavaScript</h2>
+            <div>
+                <div class="steps">
+                    <span class="active-lab">Не владею</span>
+                    <span class="active-lab">Использую готовые решения</span>
+                    <span class="active-lab">Исопользую готовые решения и умею их переделывать</span>
+                    <span>Пишу сложный JS с нуля</span>
+                </div>
+                <div class="step-slider" id="slider"></div>
+
+            </div>
+        </div>
+        <div class="about" id="menu-anchor-about">
+            <div class="icon" >
+                <img src="../images/icon-about.png" alt="">
+            </div>
+            <h2>Расскажите о себе</h2>
+            <p>Напишите несколько предложений, чем привлекла наша вакансия
+                и что вы ожидаете от работы у нас.
+            </p>
+            <textarea name="textarea" cols="30" rows="10" placeholder="Понравилась тем, что...">Вакансия привлекла тем, что я подходил по большинству требований и то, что в  компании есть куда расти, судя по описанию. От работы, в первую очередь, ожидаю развития, стабильности, крупных проектов с адекватными сроками, ну и хорошую оплату. </textarea>
+        </div>
+        <input type="submit" value="Готово">
+    </form>
+</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+@mixin flex($direction, $justify, $align){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin box {
+  box-sizing: border-box;
+}
+
+@mixin animate {
+  transition: all 0.3s;
+}
+
+@mixin RobotoReg {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+@mixin RobotoThin {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+@mixin RobotoLight {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
